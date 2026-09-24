@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Annem Surendra Prakyath — B.Tech CSE (AI &amp; ML)</title>
+<meta name="description" content="Portfolio of Annem Surendra Prakyath, B.Tech CSE (AI & ML) student and aspiring AI/ML engineer from Hyderabad, India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#070b16;--bg2:#0b1224;--card:rgba(255,255,255,.035);--line:rgba(148,163,209,.16);--tx:#e7ebf5;--mut:#98a2bd;--blue:#4f8cff;--pur:#8b7bff;--r:18px;
+--hd:'Space Grotesk','Segoe UI',system-ui,sans-serif;--bd:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));-webkit-text-size-adjust:100%}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.65 var(--bd);overflow-x:hidden;
+background-image:radial-gradient(60rem 30rem at 85% -5%,rgba(79,140,255,.10),transparent 60%),radial-gradient(45rem 30rem at -10% 40%,rgba(139,123,255,.07),transparent 60%);background-repeat:no-repeat}
+h1,h2,h3{font-family:var(--hd);line-height:1.15;margin:0;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:8px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+section{padding:88px 0}
+.eyebrow{font:600 12px/1 var(--hd);letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:12px}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:36px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:border-color .2s,transform .2s,background .2s}
+.card:hover{border-color:rgba(79,140,255,.4);background:rgba(255,255,255,.05);transform:translateY(-2px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:12px;font:600 14px var(--bd);border:1px solid var(--line);color:var(--tx);background:transparent;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.btn:hover{border-color:rgba(79,140,255,.55);background:rgba(79,140,255,.08)}
+.btn.pri{background:linear-gradient(135deg,#4f8cff,#6d6bff);border-color:transparent;color:#fff}
+.btn.pri:hover{filter:brightness(1.08);transform:translateY(-1px)}
+.btn.sm{min-height:38px;padding:0 14px;font-size:13px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(7,11,22,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:16px;height:68px}
+.brand{font:700 17px var(--hd);letter-spacing:.02em;margin-right:auto;white-space:nowrap}
+.brand span{color:var(--blue)}
+.links{display:flex;gap:4px}
+.links a{padding:8px 12px;border-radius:10px;color:var(--mut);font-size:14px;font-weight:500;transition:color .2s,background .2s}
+.links a:hover{color:var(--tx);background:rgba(255,255,255,.05)}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:transparent;color:var(--tx);cursor:pointer;align-items:center;justify-content:center}
+/* hero */
+#home{padding:72px 0 88px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hi{color:var(--mut);font-size:18px;margin:0 0 6px}
+h1{font-size:clamp(36px,6.2vw,64px);font-weight:700;overflow-wrap:anywhere}
+h1 .g{background:linear-gradient(120deg,#8db4ff,#4f8cff 45%,#9d8bff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:500 clamp(16px,2.2vw,20px) var(--hd);color:#c3cbe0;margin:18px 0 14px}
+.lead{color:var(--mut);max-width:56ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:22px}
+.soc{display:flex;gap:18px;color:var(--mut);font-size:14px;font-weight:500}
+.soc a:hover{color:var(--blue)}
+.photo{justify-self:center;position:relative;width:min(340px,80vw);aspect-ratio:1}
+.photo::before{content:"";position:absolute;inset:-14%;background:radial-gradient(circle,rgba(79,140,255,.22),transparent 65%);z-index:0}
+.photo img{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;object-fit:cover;border:2px solid rgba(148,163,209,.35);display:block}
+/* about / edu */
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.two p{margin:0 0 14px;color:#c3cbe0}
+.two p:last-child{margin:0}
+h3{font-size:18px;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.tags li{padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);font-size:13px;color:#cfd6ea}
+.tl{position:relative;padding-left:32px;max-width:720px}
+.tl::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--blue),var(--pur))}
+.tl .card::before{content:"";position:absolute;left:-30px;top:30px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--blue)}
+.tl .card{position:relative}
+.yr{display:inline-block;font:600 12px var(--hd);letter-spacing:.08em;color:var(--pur);margin-bottom:8px}
+.tl h3{margin-bottom:6px;font-size:20px}
+.tl p{margin:0;color:var(--mut)}
+/* skills */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid4 h3{font-size:15px;color:var(--blue);letter-spacing:.04em}
+/* projects */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.proj{display:flex;flex-direction:column;gap:14px}
+.proj.feat{grid-column:span 3;flex-direction:row;align-items:flex-start;gap:24px}
+.proj .body{display:flex;flex-direction:column;gap:12px;flex:1;min-width:0}
+.ico{flex:none;width:48px;height:48px;border-radius:14px;display:grid;place-items:center;color:#a9c4ff;background:linear-gradient(135deg,rgba(79,140,255,.18),rgba(139,123,255,.14));border:1px solid var(--line)}
+.ico svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.proj h3{margin:0;font-size:19px}
+.proj p{margin:0;color:var(--mut);font-size:15px}
+.proj .tags{margin-top:auto}
+.proj .btn{align-self:flex-start;margin-top:4px}
+/* growth */
+.grid3.g3 .card h3{font-size:17px}
+.grid3.g3 p{margin:0;color:var(--mut);font-size:15px}
+/* contact */
+.contact{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.contact .k{font:600 12px var(--hd);letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.contact .v{font-size:17px;font-weight:500;overflow-wrap:anywhere}
+.contact a.v:hover{color:var(--blue)}
+.contact .row{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}
+.contact .row a.s{font-size:14px;color:var(--blue)}
+footer{border-top:1px solid var(--line);padding:36px 0;background:var(--bg2)}
+.foot{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+.foot b{font:700 16px var(--hd);display:block}
+.foot small{color:var(--mut)}
+.foot .soc{gap:16px}
+.copy{margin-top:18px;color:var(--mut);font-size:13px}
+@media(max-width:920px){
+.links{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;padding:12px 20px 18px;background:rgba(7,11,22,.97);border-bottom:1px solid var(--line)}
+.links.open{display:flex}.links a{padding:12px 8px;font-size:16px}
+.burger{display:inline-flex}
+.grid4{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(2,1fr)}.proj.feat{grid-column:span 2}
+.two{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+section{padding:64px 0}#home{padding:44px 0 64px}
+.hero{grid-template-columns:1fr;gap:36px;text-align:left}.photo{order:-1;width:min(260px,68vw)}
+.grid3,.grid4,.contact{grid-template-columns:1fr}.proj.feat{grid-column:auto;flex-direction:column;gap:14px}
+.cta .btn{flex:1 1 100%}
+.brand{font-size:15px}.nav .btn.sm{padding:0 12px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap nav">
+<a class="brand" href="#home" aria-label="Home">A.S. <span>Prakyath</span></a>
+<nav id="menu" class="links" aria-label="Main">
+<a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+</nav>
+<a class="btn pri sm" href="assets/Annem_Surendra_Prakyath_Resume.pdf" download="Annem_Surendra_Prakyath_Resume.pdf">Download Resume</a>
+<button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+</div>
+</header>
+<main>
+<section id="home">
+<div class="wrap hero">
+<div>
+<p class="hi">Hi, I'm</p>
+<h1><span class="g">ANNEM SURENDRA PRAKYATH</span></h1>
+<p class="role">B.Tech CSE (AI &amp; ML) | Aspiring AI/ML Engineer</p>
+<p class="lead">Passionate about building intelligent solutions and exploring Artificial Intelligence, Machine Learning, and modern web technologies. Always eager to learn, build and grow.</p>
+<div class="cta">
+<a class="btn pri" href="#projects">View Projects</a>
+<a class="btn" href="#contact">Let's Connect</a>
+<a class="btn" href="assets/Annem_Surendra_Prakyath_Resume.pdf" download="Annem_Surendra_Prakyath_Resume.pdf">Download Resume</a>
+</div>
+<div class="soc"><a href="https://www.linkedin.com/in/as-prakyath-2504b42bb" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/asprakyath-alt" target="_blank" rel="noopener">GitHub ↗</a></div>
+</div>
+<div class="photo"><img src="assets/prakyath.jpg" width="480" height="480" alt="Portrait of Annem Surendra Prakyath in a navy suit and tie"></div>
+</div>
+</section>
+
+<section id="about"><div class="wrap">
+<div class="eyebrow">About</div><h2>Student, builder, learner</h2>
+<div class="two">
+<div class="card">
+<p>I'm a 4th-year Computer Science and Engineering student specializing in Artificial Intelligence and Machine Learning at DRK Institute, Hyderabad.</p>
+<p>I enjoy turning ideas into working software, from AI-driven applications to web projects, and I'm building my foundation as an aspiring AI/ML engineer through coursework, personal projects, and steady self-directed learning.</p>
+</div>
+<div class="card"><h3>Interests</h3>
+<ul class="tags"><li>Artificial Intelligence</li><li>Machine Learning</li><li>Generative AI</li><li>Web Development</li><li>Data Analytics</li><li>Problem Solving</li></ul></div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<div class="eyebrow">Education</div><h2>Academic background</h2>
+<div class="tl"><div class="card">
+<span class="yr">2023 – 2027 · 4TH YEAR</span>
+<h3>B.Tech — Computer Science &amp; Engineering (AI &amp; ML)</h3>
+<p>DRK Institute of Science &amp; Technology, Hyderabad</p>
+<p>Jawaharlal Nehru Technological University Hyderabad (JNTUH)</p>
+</div></div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<div class="eyebrow">Skills</div><h2>Tools &amp; technologies</h2>
+<div class="grid4">
+<div class="card"><h3>Programming</h3><ul class="tags"><li>Python</li><li>Java</li><li>C</li><li>JavaScript</li></ul></div>
+<div class="card"><h3>Web Development</h3><ul class="tags"><li>HTML</li><li>CSS</li><li>React</li><li>Node.js</li></ul></div>
+<div class="card"><h3>Database &amp; Tools</h3><ul class="tags"><li>MySQL</li><li>Git</li><li>GitHub</li></ul></div>
+<div class="card"><h3>AI / Data</h3><ul class="tags"><li>Machine Learning</li><li>Artificial Intelligence</li><li>Generative AI</li><li>Data Analytics</li></ul></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<div class="eyebrow">Projects</div><h2>Selected work</h2>
+<div class="grid3">
+<article class="card proj feat">
+<div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5M4 19h16M8 15l3-4 3 2 4-6"/></svg></div>
+<div class="body"><h3>AI-Driven Exam Adaptive Assessment System</h3>
+<p>An AI-driven assessment platform designed to support adaptive exam experiences and provide a more intelligent approach to evaluating student performance.</p>
+<ul class="tags"><li>Python</li><li>Machine Learning</li><li>Flask</li><li>SQLite</li></ul>
+<a class="btn pri sm" href="https://ai-driven-exam-adaptive-assessment-mauve.vercel.app/" target="_blank" rel="noopener">Live Demo ↗</a></div>
+</article>
+<article class="card proj"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3zM12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></div>
+<h3>3D Construction Modelling System</h3>
+<p>A Python-based 3D construction modelling application focused on visualizing construction-related models through an interactive application interface.</p>
+<ul class="tags"><li>Python</li><li>Blender API</li><li>JSON</li><li>CSV</li></ul>
+<a class="btn pri sm" href="https://construction-through-models-using-python-lxq9mcbyabcesfdnvpjnz.streamlit.app/" target="_blank" rel="noopener">Live Demo ↗</a></article>
+<article class="card proj"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l2 2 4-4M5 4h14v16H5z"/></svg></div>
+<h3>Smart Attendance Management System</h3>
+<p>A smart attendance management solution designed to simplify attendance tracking and provide a more organized approach to managing student attendance.</p>
+<ul class="tags"><li>End-to-End Project</li></ul></article>
+<article class="card proj"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3zM4 7v10c0 1.7 3.6 3 8 3s8-1.3 8-3V7M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div>
+<h3>Smart Storage Management System</h3>
+<p>A smart storage management solution focused on organizing, tracking, and managing stored resources through a structured digital system.</p>
+<ul class="tags"><li>End-to-End Project</li></ul></article>
+<article class="card proj"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.5 6.6 19.5l1.2-6L3.3 9.3l6.1-.7L12 3z"/></svg></div>
+<h3>Space Game</h3>
+<p>An interactive space-themed game project focused on gameplay, user interaction, and an engaging digital experience.</p>
+<ul class="tags"><li>Game Project</li></ul></article>
+<article class="card proj"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9h12a3 3 0 013 3v3a2 2 0 01-3.4 1.4L15 14H9l-2.6 2.4A2 2 0 013 15v-3a3 3 0 013-3zM8 11v2M7 12h2"/></svg></div>
+<h3>Frog Jump</h3>
+<p>A simple interactive game project built around the frog-jumping concept, focusing on gameplay interaction and responsive user experience.</p>
+<ul class="tags"><li>Game Project</li></ul></article>
+<article class="card proj"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9c3-3 6 3 9 0s6 3 9 0M3 15c3-3 6 3 9 0s6 3 9 0"/></svg></div>
+<h3>AI-Driven Marine Data Assessment</h3>
+<p>An AI-focused project exploring marine data assessment and the application of intelligent approaches to analyze and interpret marine-related information.</p>
+<ul class="tags"><li>AI</li><li>Data Assessment</li></ul></article>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<div class="eyebrow">Experience</div><h2>Experience / Professional Growth</h2>
+<div class="grid3 g3">
+<div class="card"><h3>Academic &amp; Technical Development</h3><p>Developing practical skills through academic coursework, personal projects, hackathon activities, and continuous exploration of AI, machine learning, web technologies, and data-driven applications.</p></div>
+<div class="card"><h3>Project-Based Learning</h3><p>Building and experimenting with software projects to strengthen programming, problem-solving, application development, and AI/ML concepts.</p></div>
+<div class="card"><h3>Continuous Learning</h3><p>Continuously exploring emerging technologies including Artificial Intelligence, Generative AI, Machine Learning, and modern software development practices.</p></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<div class="eyebrow">Contact</div><h2>Let's connect</h2>
+<div class="contact">
+<div class="card"><div class="k">Email</div><a class="v" href="mailto:asprakyath@gmail.com">asprakyath@gmail.com</a></div>
+<div class="card"><div class="k">Phone / WhatsApp</div><div class="row"><a class="v" href="tel:+917396592648">7396592648</a><a class="s" href="https://wa.me/917396592648" target="_blank" rel="noopener">WhatsApp ↗</a></div></div>
+<div class="card"><div class="k">Location</div><div class="v">Hyderabad, India</div></div>
+<div class="card"><div class="k">Profiles</div><div class="row"><a class="v" href="https://www.linkedin.com/in/as-prakyath-2504b42bb" target="_blank" rel="noopener">LinkedIn ↗</a><a class="v" href="https://github.com/asprakyath-alt" target="_blank" rel="noopener">GitHub ↗</a></div></div>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">
+<div class="foot">
+<div><b>ANNEM SURENDRA PRAKYATH</b><small>B.Tech CSE (AI &amp; ML) | Aspiring AI/ML Engineer</small></div>
+<div class="soc"><a href="https://www.linkedin.com/in/as-prakyath-2504b42bb" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/asprakyath-alt" target="_blank" rel="noopener">GitHub</a><a href="mailto:asprakyath@gmail.com">Email</a></div>
+</div>
+<div class="copy">© <span id="yr">2026</span> Annem Surendra Prakyath. All rights reserved.</div>
+</div></footer>
+<script>
+(function(){
+var b=document.getElementById('burger'),m=document.getElementById('menu');
+b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
